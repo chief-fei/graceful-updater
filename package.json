@@ -1,7 +1,7 @@
 {
-  "name": "graceful-updater",
-  "version": "1.2.0",
-  "description": "graceful-updater is a software updator management solution for Electron applications, It is convenient to complete full software update and dynamic update.",
+  "name": "qnb-updater",
+  "version": "1.0.0",
+  "description": "qnb updater",
   "scripts": {
     "build": "sh ./build.sh",
     "test": "egg-bin test test/**/index.test.ts",
@@ -19,10 +19,6 @@
   "files": [
     "build/**/*.js"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/electron-modules/graceful-updater"
-  },
   "dependencies": {
     "eventemitter3": "4",
     "graceful-updater-windows-helper": "1",
@@ -39,6 +35,7 @@
     "@types/mocha": "^10.0.1",
     "@types/mock-require": "^2.0.1",
     "@types/react-dom": "^17.0.16",
+    "@types/urllib": "^2.33.0",
     "@typescript-eslint/parser": "^5.19.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "concurrently": "^5.3.0",
@@ -46,7 +43,7 @@
     "cross-env": "^7.0.3",
     "detect-port": "1",
     "egg-bin": "^5.9.0",
-    "electron": "18",
+    "electron": "23",
     "electron-windows": "18",
     "eslint": "^7.32.0",
     "eslint-config-egg": "^12.1.0",
