@@ -1,7 +1,7 @@
 {
-  "name": "graceful-updater",
+  "name": "graceful-updater-electron",
   "version": "34.0.2",
-  "description": "graceful-updater is a software updator management solution for Electron applications, It is convenient to complete full software update and dynamic update.",
+  "description": "graceful-updater-electron is a software updator management solution for Electron applications, It is convenient to complete full software update and dynamic update.",
   "scripts": {
     "build": "sh ./build.sh",
     "test": "egg-bin test test/**/index.test.ts",
