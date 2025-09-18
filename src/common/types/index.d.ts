@@ -1,4 +1,5 @@
 import { UpdateType, InstallResultType, DownloadProgressStatus } from '../constants';
+import { RequestOptions } from 'urllib';
 
 export interface ILogger {
   info(message: string, ...args: any[]): void;
@@ -52,6 +53,7 @@ export interface IAppUpdatorOptions {
   autoDownload?: boolean;
   productName?: string;
   getWindowsHelperExeDir?: () => string;
+  requestOptions?: RequestOptions;
 }
 
 interface IProgressHandleArg {

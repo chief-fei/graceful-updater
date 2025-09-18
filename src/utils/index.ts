@@ -20,7 +20,7 @@ export { createWriteStream, existsSync, sudoPrompt };
 export const getMacOSAppPath = () => {
   const sep = path.sep;
   const execPath = process.execPath;
-  const contentPath = [ '', 'Contents', 'MacOS' ].join(sep);
+  const contentPath = ['', 'Contents', 'MacOS'].join(sep);
   return execPath.split(contentPath)[0];
 };
 
@@ -94,7 +94,7 @@ export const existFile = async (path: string): Promise<boolean> => {
 export const requestUpdateInfo = async (options: IAppUpdatorOptions): Promise<IUpdateInfo> => {
   const { url } = options;
   if (!url) {
-    throw new Error('request url can\'t be empty');
+    throw new Error("request url can't be empty");
   }
 
   let res: any = null;
@@ -102,6 +102,7 @@ export const requestUpdateInfo = async (options: IAppUpdatorOptions): Promise<IU
     res = await urllib.request(url, {
       dataType: 'json',
       timeout: 10 * 1000,
+      ...(options.requestOptions || {}),
     });
   } catch (e) {
     throw e;
